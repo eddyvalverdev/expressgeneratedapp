@@ -40,5 +40,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 app.use(express.static('public'))
+//app.use('/static', express.static('public')) //To create a virtual path prefix (where the path does not actually exist in the file system) for files that are served by the express.static function, specify a mount path for the static directory
 module.exports = app;
 
